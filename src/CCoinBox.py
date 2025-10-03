@@ -15,7 +15,7 @@ class CCoinBox:
     def vente(self):
         if self.vente_permise:
             self.monnaie_totale = self.monnaie_totale + 2
-            self.monnaie_courante = self.monnaie_courante - 2
+            self.monnaie_courante += self.monnaie_courante - 2
             print("Vente! Voici votre article ...")
             if self.monnaie_courante < 2:
                 self.vente_permise = False
